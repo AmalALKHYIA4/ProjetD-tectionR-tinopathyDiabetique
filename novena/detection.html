@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Détection de la rétinopathie diabétique par intelligence artificielle">
+    <meta name="author" content="RetinoDetect">
+    <title>RetinoDetect - Détection IA</title>
+    
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Icon Font CSS -->
+    <link rel="stylesheet" href="css/icofont.min.css">
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="css/plugins.css">
+    
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Header Area -->
+    <header class="header-area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-3 col-md-3">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="RetinoDetect">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-9 col-md-9">
+                    <div class="header-right">
+                        <ul class="header-contact">
+                            <li>
+                                <i class="icofont-ui-call"></i>
+                                <p>Appelez-nous</p>
+                                <h5>+33 1 23 45 67 89</h5>
+                            </li>
+                            <li>
+                                <i class="icofont-location-pin"></i>
+                                <p>Localisation</p>
+                                <h5>Paris, France</h5>
+                            </li>
+                            <li>
+                                <i class="icofont-ui-clock"></i>
+                                <p>Horaires</p>
+                                <h5>Lun-Sam: 9h-18h</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar Area -->
+    <div class="navbar-area">
+        <div class="main-responsive-nav">
+            <div class="container">
+                <div class="main-responsive-menu">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="RetinoDetect">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-navbar">
+            <div class="container">
+                <nav class="navbar navbar-expand-md navbar-light">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/logo.png" alt="RetinoDetect">
+                    </a>
+                    <div class="collapse navbar-collapse mean-menu" id="navbarSupportedContent">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a href="index.html" class="nav-link">Accueil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="about.html" class="nav-link">À propos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="doctor.html" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Espace patient <i class="icofont-thin-down"></i></a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown03">
+                                    <li><a class="dropdown-item" href="doctor.html">Nos spécialistes</a></li>
+                                    <li><a class="dropdown-item" href="appoinment.html">Prendre rendez-vous</a></li>
+                                    <li><a class="dropdown-item" href="visite.html">Votre visite au centre</a></li>
+                                    <li><a class="dropdown-item" href="tarifs.html">Tarifs et conventions</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Page Title -->
+    <div class="page-title-area">
+        <div class="container">
+            <div class="page-title-content">
+                <h2>Détection IA</h2>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li>Détection IA</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Authentication Section -->
+    <section class="auth-section pt-100 pb-70">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="auth-block">
+                        <div class="section-title text-center">
+                            <h2>Vérification d'identité</h2>
+                            <p>Pour votre sécurité et conformément aux réglementations médicales</p>
+                        </div>
+                        
+                        <div class="auth-steps">
+                            <div class="step active" id="step1">
+                                <div class="step-number">1</div>
+                                <h4>Connexion</h4>
+                                <form id="loginForm" class="auth-form">
+                                    <div class="form-group">
+                                        <label for="email">Email</label>
+                                        <input type="email" id="email" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password">Mot de passe</label>
+                                        <input type="password" id="password" class="form-control" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-main btn-round-full">Se connecter</button>
+                                </form>
+                            </div>
+                            
+                            <div class="step" id="step2">
+                                <div class="step-number">2</div>
+                                <h4>Vérification médicale</h4>
+                                <form id="medicalForm" class="auth-form">
+                                    <div class="form-group">
+                                        <label for="patientId">Numéro de patient</label>
+                                        <input type="text" id="patientId" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="birthDate">Date de naissance</label>
+                                        <input type="date" id="birthDate" class="form-control" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="diabetesType">Type de diabète</label>
+                                        <select id="diabetesType" class="form-control" required>
+                                            <option value="">Sélectionnez</option>
+                                            <option value="type1">Type 1</option>
+                                            <option value="type2">Type 2</option>
+                                            <option value="gestational">Gestationnel</option>
+                                        </select>
+                                    </div>
+                                    <button type="submit" class="btn btn-main btn-round-full">Vérifier</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detection Section -->
+    <section class="detection-section pt-100 pb-70" style="display: none;">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="detection-content">
+                        <h3>Analyse de vos images rétiniennes</h3>
+                        <p>Notre système d'IA analyse vos images rétiniennes avec une précision de 98% pour détecter les signes précoces de rétinopathie diabétique.</p>
+                        
+                        <div class="upload-area">
+                            <form id="uploadForm" class="upload-form">
+                                <div class="form-group">
+                                    <label for="retinalImage">Sélectionnez votre image rétinienne</label>
+                                    <input type="file" id="retinalImage" name="retinalImage" accept="image/*" class="form-control">
+                                </div>
+                                <button type="submit" class="btn btn-main btn-round-full">Analyser l'image</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="detection-image">
+                        <img src="images/detection/retina.jpg" alt="Analyse rétinienne">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section class="results-section pt-100 pb-70" style="display: none;">
+        <div class="container">
+            <div class="section-title">
+                <h2>Résultats de l'analyse</h2>
+                <p>Votre rapport de détection</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="results-block">
+                        <div class="results-header">
+                            <h3>Rapport d'analyse</h3>
+                            <span class="date">Date: <span id="analysisDate"></span></span>
+                        </div>
+                        <div class="results-content">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="result-item">
+                                        <h4>Résultat de la détection</h4>
+                                        <div class="result-status" id="detectionResult">
+                                            <i class="icofont-check-circled"></i>
+                                            <span>Analyse en cours...</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="result-item">
+                                        <h4>Niveau de confiance</h4>
+                                        <div class="confidence-level" id="confidenceLevel">
+                                            <div class="progress">
+                                                <div class="progress-bar" role="progressbar" style="width: 0%"></div>
+                                            </div>
+                                            <span>98%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="recommendations">
+                                <h4>Recommandations</h4>
+                                <p id="recommendations">En attente des résultats...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html">
+                                <img src="images/logo.png" alt="RetinoDetect">
+                            </a>
+                        </div>
+                        <p>Dépistage précoce de la rétinopathie diabétique par intelligence artificielle.</p>
+                        <div class="footer-social">
+                            <a href="#"><i class="icofont-facebook"></i></a>
+                            <a href="#"><i class="icofont-twitter"></i></a>
+                            <a href="#"><i class="icofont-linkedin"></i></a>
+                            <a href="#"><i class="icofont-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-widget">
+                        <h3>Liens rapides</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="about.html">À propos</a></li>
+                            <li><a href="doctor.html">Nos spécialistes</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3>Nos services</h3>
+                        <ul class="footer-links">
+                            <li><a href="visite.html">Votre visite</a></li>
+                            <li><a href="tarifs.html">Tarifs</a></li>
+                            <li><a href="appoinment.html">Rendez-vous</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-widget">
+                        <h3>Contactez-nous</h3>
+                        <ul class="footer-contact">
+                            <li>
+                                <i class="icofont-location-pin"></i>
+                                Paris, France
+                            </li>
+                            <li>
+                                <i class="icofont-ui-call"></i>
+                                <a href="tel:+33123456789">+33 1 23 45 67 89</a>
+                            </li>
+                            <li>
+                                <i class="icofont-envelope"></i>
+                                <a href="mailto:contact@retinodetect.fr">contact@retinodetect.fr</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="copyright-content">
+                    <p>© 2024 RetinoDetect. Tous droits réservés.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery JS -->
+    <script src="js/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+    
+    <!-- Plugins JS -->
+    <script src="js/plugins.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+    
+    <!-- Detection JS -->
+    <script src="js/detection.js"></script>
+</body>
+</html> 

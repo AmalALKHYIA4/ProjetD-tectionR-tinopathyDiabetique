@@ -1,0 +1,50 @@
+.section.accuracy {
+    padding: 100px 0;
+    background-color: $secondary-bg;
+}
+
+.accuracy-block {
+    background: $light;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: $box-shadow;
+    transition: $transition;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.accuracy-icon {
+    i {
+        font-size: 60px;
+        color: $secondary-color;
+    }
+}
+
+.accuracy-details {
+    margin-top: 40px;
+    
+    .detail-item {
+        padding: 20px;
+        
+        h4 {
+            font-size: 36px;
+            color: $primary-color;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            color: $text-color;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .accuracy-details {
+        .detail-item {
+            margin-bottom: 20px;
+        }
+    }
+} 
